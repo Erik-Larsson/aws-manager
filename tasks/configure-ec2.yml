@@ -1,0 +1,14 @@
+---
+- name: launching AWS instance using Ansible
+  ec2:
+    key_name: awx_instance_ansible
+    instance_type: t2.micro
+    image: ami-033b95fb8079dc481
+    region: us-east-1a
+    wait: yes
+    group: Ansible
+    count: 1
+    vpc_subnet_id: default
+    assign_public_ip: yes
+    aws_access_key: AKIAY5XZL2MM6IQU5TSX
+    aws_secret_key: Pxcb+W0fzdf9HllYJAid+90ArmrCMBU6DtkKC3
