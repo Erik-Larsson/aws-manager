@@ -1,2 +1,3 @@
 ---
-# tasks file for aws-manager
+- name: Define EC2 no AWS
+  import_tasks: configure-ec2.yml
