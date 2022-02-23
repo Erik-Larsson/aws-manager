@@ -4,7 +4,7 @@
     key_name: "aws_instance_ansible" 
     instance_type: t2.micro
     image: ami-033b95fb8079dc481
-    region: us-east-1
+    region: us-east-2
     wait: yes
     group_id: sg-04ad285aa5739a0e4
     count: 1
