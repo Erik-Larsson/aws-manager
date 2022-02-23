@@ -3,10 +3,10 @@
   ec2:
     key_name: "aws_instance_ansible" 
     instance_type: t2.micro
-    image: ami-033b95fb8079dc481
+    image: ami-0b614a5d911900a9b
     region: us-east-2
     wait: yes
-    group_id: sg-04ad285aa5739a0e4
+    group_id: sg-0dab4806186551d5c
     count: 1
     #vpc_subnet_id: subnet-0c8ff53e2f7e49838
     aws_access_key: AKIAY5XZL2MMTKKYZROT

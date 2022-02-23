@@ -7,7 +7,7 @@
       name: "awx-sec"
       description: "Sec group for ansible"
       # vpc_id: 12345
-      region: "us-east-1"
+      region: "us-east-2"
       aws_access_key: "AKIAY5XZL2MMTKKYZROT"
       aws_secret_key: "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"
       rules:
