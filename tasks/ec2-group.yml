@@ -1,0 +1,18 @@
+---
+- name: Security Group AWS
+  hosts: local
+  tasks:
+  - name: create group to AWS
+    ec2_group:
+      name: "awx-sec"
+      description: "Sec group for ansible"
+      # vpc_id: 12345
+      region: "us-east-1"
+      aws_access_key: "AKIAY5XZL2MMTKKYZROT"
+      aws_secret_key: "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"
+      rules:
+        - proto: tcp
+          ports:
+            - 22
+          cidr_ip: 0.0.0.0/0
+          rule_desc: allow all on ssh port
