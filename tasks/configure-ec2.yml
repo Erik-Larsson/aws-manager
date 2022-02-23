@@ -8,7 +8,7 @@
     wait: yes
     group: Ansible
     count: 1
-    vpc_subnet_id: default
+    vpc_subnet_id: subnet-0c8ff53e2f7e49838
     assign_public_ip: yes
     aws_access_key: AKIAY5XZL2MMTKKYZROT
     aws_secret_key: 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
