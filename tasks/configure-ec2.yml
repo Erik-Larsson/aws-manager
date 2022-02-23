@@ -1,7 +1,7 @@
 ---
 - name: launching AWS instance using Ansible
   ec2:
-    key_name: awx_instance_ansible
+    key_name: "aws_instance_ansible" 
     instance_type: t2.micro
     image: ami-033b95fb8079dc481
     region: us-east-1

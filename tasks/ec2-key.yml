@@ -1,0 +1,11 @@
+---
+- name: Key AWS
+  hosts: local
+  tasks:
+  - name: create public key to AWS
+    ec2_key:
+      name: "aws_instance_ansible"
+      key_material: "{{ lookup('file', '/etc/keys/sshkey.pub') }}"
+      region: "us-east-1"
+      aws_access_key: "AKIAY5XZL2MMTKKYZROT"
+      aws_secret_key: "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"
