@@ -1,0 +1,13 @@
+---
+- name: launching AWS instance using Ansible
+  ec2:
+    key_name: "{{ form.key_name }}"
+    instance_type: "{{ form.instance_type }}"
+    image: "{{ form.image }}"
+    region: "{{ form.region }}"
+    wait: yes
+    group_id: "{{ form.id_group }}"
+    count: 1
+    #vpc_subnet_id: subnet-0c8ff53e2f7e49838
+    aws_access_key: "{{ form.aws_id }}"
+    aws_secret_key: "{{ form.aws_secret_key }}"
