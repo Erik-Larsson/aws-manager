@@ -1,6 +1,7 @@
 ---
 - name: launching AWS instance using Ansible
   ec2:
+    assign_public_ip: yes     
     key_name: awx_instance_ansible
     instance_type: t2.micro
     image: ami-033b95fb8079dc481
