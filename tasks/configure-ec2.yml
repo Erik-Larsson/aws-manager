@@ -9,6 +9,5 @@
     group_id: sg-04ad285aa5739a0e4
     count: 1
     #vpc_subnet_id: subnet-0c8ff53e2f7e49838
-    assign_public_ip: yes
     aws_access_key: AKIAY5XZL2MMTKKYZROT
     aws_secret_key: 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
