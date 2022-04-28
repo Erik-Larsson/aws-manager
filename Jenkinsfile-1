@@ -1,5 +1,10 @@
 pipeline {
-  agent {label 'linux'}
+  agent {
+      docker { 
+            image 'jenkins/jenkins:latest' 
+            label 'linux'
+             }
+  }
   stages {
     stage('Hello') {
       steps {
