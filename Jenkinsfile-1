@@ -2,7 +2,6 @@ pipeline {
   agent {
     docker {
         image 'jenkins/jenkins:lts-jdk11'
-        label 'linux'
     }
   }
   stages {
