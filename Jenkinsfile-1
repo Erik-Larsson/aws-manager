@@ -1,5 +1,5 @@
 pipeline {
-  agent { docker 'jenkins/jenkins:lts-jdk11' }
+  agent { agent 'linux' }
   stages {
     stage('Hello') {
       steps {
